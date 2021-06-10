@@ -9,7 +9,7 @@
         </repository>
         <repository>
             <id>apache</id>
-            <url>https://repo1.maven.apache.org/maven2/</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
 
     </repositories>
@@ -51,8 +51,8 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
