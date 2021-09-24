@@ -5,7 +5,7 @@ import com.mg.learningspring.data.entity.Reservation;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.sql.Date;
+import java.util.Date;
 
 
 @Repository
