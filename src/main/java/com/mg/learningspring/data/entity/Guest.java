@@ -14,7 +14,7 @@ public class Guest {
     @Id
     @Column(name="GUEST_ID")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long guestId;
+    private Long guestId;
 
     @Column(name="FIRST_NAME")
     private String firstName;
@@ -37,11 +37,11 @@ public class Guest {
     @Column(name="PHONE_NUMBER")
     private String phoneNumber;
 
-    public long getGuestId() {
+    public Long getGuestId() {
         return guestId;
     }
 
-    public void setGuestId(long guestId) {
+    public void setGuestId(Long guestId) {
         this.guestId = guestId;
     }
 

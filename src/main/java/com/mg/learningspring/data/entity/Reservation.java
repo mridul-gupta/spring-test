@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
+import java.sql.Date;
 
 @Entity
 @Table(name="RESERVATION")
@@ -18,10 +18,10 @@ public class Reservation {
     private long reservationId;
 
     @Column(name="ROOM_ID")
-    private int roomId;
+    private long roomId;
 
     @Column(name="GUEST_ID")
-    private int guestId;
+    private long guestId;
 
     @Column(name="RES_DATE")
     private Date resDate;
@@ -35,19 +35,19 @@ public class Reservation {
         this.reservationId = reservationId;
     }
 
-    public int getRoomId() {
+    public long getRoomId() {
         return roomId;
     }
 
-    public void setRoomId(int roomId) {
+    public void setRoomId(long roomId) {
         this.roomId = roomId;
     }
 
-    public int getGuestId() {
+    public long getGuestId() {
         return guestId;
     }
 
-    public void setGuestId(int guestId) {
+    public void setGuestId(long guestId) {
         this.guestId = guestId;
     }
 
